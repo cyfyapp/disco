@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    disco_gui_tauri_lib::run()
+    disco_gui_lib::run()
 }
