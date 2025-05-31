@@ -16,6 +16,14 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "inputs": ["src/**/*.{ts,tsx}", "**/*.test.{ts,tsx}", "vitest.config.ts"]
+    },
+    "test:run": {
+      "dependsOn": ["^test:run"],
+      "inputs": ["src/**/*.{ts,tsx}", "**/*.test.{ts,tsx}", "vitest.config.ts"]
     }
   }
 }
